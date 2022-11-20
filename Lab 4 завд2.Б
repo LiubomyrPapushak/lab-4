@@ -1,0 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+#include <conio.h>
+
+int main(void)
+{
+	int d = 1, n = 0, i = 21;
+	setlocale(LC_CTYPE, "ukr");
+	while ( i <= 100)
+	{
+		if (i % 7 == 1)
+		{
+			d *= i; n++;
+		}
+		i++;
+	}
+	printf("\n В дiапазонi [21:100] \n Добуток чисел кратних 7 : %d \n Kiлькiсть значень: %d \n Cереднє арифметичне значення: %.1f", d, n, (float)d / n);
+	int getch(); getch();
+	return 0;
+}
+
