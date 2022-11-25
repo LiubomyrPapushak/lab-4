@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_CTYPE, "ukr");
+
+	int s = 0;
+	for (int i = 1; i <= 20; i++) {
+		for (int j = 1; j <= 10; j++) {
+			s += (j / 2);
+		}
+	}
+
+	printf("\nСума = %d\n ", s);
+	int getch(); getch();
+	return 0;
+}
